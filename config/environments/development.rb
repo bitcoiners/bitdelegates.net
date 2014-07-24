@@ -34,4 +34,17 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+
+ActionMailer::Base.smtp_settings = {
+  :port           => ENV['587'],
+  :address        => ENV['smtp.mailgun.org'],
+  :user_name      => ENV['postmaster@bitdelegates.net.mailgun.org'],
+  :password       => ENV['dfd13f8f694af1d6b09eebf78de11835'],
+  :domain         => 'bitdelegates.net.mailgun.org',
+  :authentication => :plain,
+}
+ActionMailer::Base.delivery_method = :smtp
+
+
 end
