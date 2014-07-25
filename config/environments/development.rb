@@ -14,36 +14,42 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  if config.respond_to?(:action_mailer)
+  if config.respond_to?(:action_mailer)
+  if config.respond_to?(:action_mailer)
+        config.action_mailer.raise_delivery_errors = false
 
-  # Print deprecation notices to the Rails logger.
-  config.active_support.deprecation = :log
+        # Print deprecation notices to the Rails logger.
+        config.active_support.deprecation = :log
 
-  # Raise an error on page load if there are pending migrations.
-  config.active_record.migration_error = :page_load
+        # Raise an error on page load if there are pending migrations.
+        config.active_record.migration_error = :page_load
 
-  # Debug mode disables concatenation and preprocessing of assets.
-  # This option may cause significant delays in view rendering with a large
-  # number of complex assets.
-  config.assets.debug = true
+        # Debug mode disables concatenation and preprocessing of assets.
+        # This option may cause significant delays in view rendering with a large
+        # number of complex assets.
+        config.assets.debug = true
 
-  # Adds additional error checking when serving assets at runtime.
-  # Checks for improperly declared sprockets dependencies.
-  # Raises helpful error messages.
-  config.assets.raise_runtime_errors = true
+        # Adds additional error checking when serving assets at runtime.
+        # Checks for improperly declared sprockets dependencies.
+        # Raises helpful error messages.
+        config.assets.raise_runtime_errors = true
 
-  # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
+        # Raises error for missing translations
+        # config.action_view.raise_on_missing_translations = true
 
 
 ActionMailer::Base.smtp_settings = {
-  :port           => ENV['587'],
-  :address        => ENV['smtp.mailgun.org'],
-  :user_name      => ENV['postmaster@bitdelegates.net.mailgun.org'],
-  :password       => ENV['dfd13f8f694af1d6b09eebf78de11835'],
-  :domain         => 'bitdelegates.net.mailgun.org',
-  :authentication => :plain,
+        :port           => ENV['587'],
+        :address        => ENV['smtp.mailgun.org'],
+        :user_name      => ENV['postmaster@bitdelegates.net'],
+        :password       => ENV['qx5MeS8zS8hSRQGy53jnaJ'],
+        :domain         => 'www.bitdelegates.net',
+        :authentication => :plain,
 }
+  end
+  end
+  end
 ActionMailer::Base.delivery_method = :smtp
 
 

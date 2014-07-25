@@ -41,4 +41,34 @@ gem 'spring',        group: :development
 # for heroku 
 gem 'rails_12factor', group: :production
 
+gem 'rest_client'
+
+
+gem 'refinerycms', github: 'refinery/refinerycms', branch: 'master'
+gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
+
+gem "refinerycms-bootstrap"
+#gem 'refinerycms-blog'
+
+
+#gem 'friendly_id', github: 'norman/friendly_id', branch: 'master'
+#gem 'friendly_id-globalize', github: 'norman/friendly_id-globalize', branch: 'master'
+#gem 'quiet_assets'
+
+# Add support for refinerycms-acts-as-indexed
+#gem 'refinerycms-acts-as-indexed', github: 'refinery/refinerycms-acts-as-indexed'
+
+#gem 'protected_attributes'
+#em 'seo_meta', github: 'parndt/seo_meta', branch: 'master'
+
+#gem 'globalize', github: 'globalize/globalize'
+#gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
+#gem 'awesome_nested_set', github: 'collectiveidea/awesome_nested_set', branch: 'master'
+
+
+
+#gem 'spree', github: 'spree/spree', branch: '2-1-stable'
+#gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-1-stable'
+#gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-1-stable'
+#gem "spree_bootstrap"
 
