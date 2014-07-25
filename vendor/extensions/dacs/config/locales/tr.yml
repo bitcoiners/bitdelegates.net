@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      dacs:
+        title: Dacs
+    dacs:
+      admin:
+        dacs:
+          actions:
+            create_new: Yeni Ekle Dac
+            reorder: Tekrar sirala Dacs
+            reorder_done: Tekrar siralama tamamlandiDacs
+          records:
+            title: Dacs
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Dacs yok henuz.  Tikla "Yeni Ekle Dac" eklemek senin ilk dac.
+          dac:
+            view_live_html: Bunu canlu dac goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle dac
+            delete: Bunu Sil dac sonsuza dek
+      dacs:
+        show:
+          other: Diger Dacs
+  activerecord:
+    attributes:
+      'refinery/dacs/dac':
+        name: Name
+        description: Description

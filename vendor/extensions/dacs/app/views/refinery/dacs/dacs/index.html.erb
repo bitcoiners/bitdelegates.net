@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="dacs">
+    <% @dacs.each do |dac| %>
+      <li>
+        <%= link_to dac.name, refinery.dacs_dac_path(dac) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

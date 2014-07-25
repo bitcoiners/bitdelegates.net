@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      dacs:
+        title: Dacs
+    dacs:
+      admin:
+        dacs:
+          actions:
+            create_new: Lag en ny Dac
+            reorder: Endre rekkefølgen på Dacs
+            reorder_done: Ferdig å endre rekkefølgen Dacs
+          records:
+            title: Dacs
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Dacs enda. Klikk på "Lag en ny Dac" for å legge til din første dac.
+          dac:
+            view_live_html: Vis hvordan denne dac ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne dac
+            delete: Fjern denne dac permanent
+      dacs:
+        show:
+          other: Andre Dacs
+  activerecord:
+    attributes:
+      'refinery/dacs/dac':
+        name: Name
+        description: Description

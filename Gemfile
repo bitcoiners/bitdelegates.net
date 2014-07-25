@@ -48,7 +48,7 @@ gem 'refinerycms', github: 'refinery/refinerycms', branch: 'master'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
 
 gem "refinerycms-bootstrap"
-#gem 'refinerycms-blog'
+#gem 'refinerycms-blog', branch: '2-1-stable'
 
 
 #gem 'friendly_id', github: 'norman/friendly_id', branch: 'master'
@@ -72,3 +72,5 @@ gem "refinerycms-bootstrap"
 #gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-1-stable'
 #gem "spree_bootstrap"
 
+
+gem 'refinerycms-dacs', path: 'vendor/extensions'

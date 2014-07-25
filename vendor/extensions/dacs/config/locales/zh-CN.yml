@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      dacs:
+        title: Dacs
+    dacs:
+      admin:
+        dacs:
+          actions:
+            create_new: 建立新的 Dac
+            reorder: 对 Dacs 重新排序
+            reorder_done: 对 Dacs 的重新排序结束
+          records:
+            title: Dacs
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Dacs yet. Click "Add New Dac" to add your first dac.
+            no_items_yet: 目前没有 Dacs . 点击 "Add New Dac" 创建一个dac.
+          dac:
+            view_live_html: 查看 dac 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 dac
+            delete: 永久删除 dac
+      dacs:
+        show:
+          other: 其他 Dacs
+  activerecord:
+    attributes:
+      'refinery/dacs/dac':
+        name: Name
+        description: Description

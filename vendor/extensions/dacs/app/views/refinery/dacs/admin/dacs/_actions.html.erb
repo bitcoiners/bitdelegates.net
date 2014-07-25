@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Dacs::Admin::DacsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.dacs_admin_dacs_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_dacs_admin_dac_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Dacs::Admin::DacsController.sortable? && ::Refinery::Dacs::Dac.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Dacs"),
+                 refinery.dacs_admin_dacs_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Dacs"),
+                 refinery.dacs_admin_dacs_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

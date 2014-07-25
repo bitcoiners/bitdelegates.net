@@ -1,0 +1,28 @@
+sk:
+  refinery:
+    plugins:
+      dacs:
+        title: Dacs
+    dacs:
+      admin:
+        dacs:
+          actions:
+            create_new: Pridať Dac
+            reorder: Preusporiadať Dacs
+            reorder_done: Koniec radenia Dacs
+          records:
+            title: Dacs
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Dacs. Kliknite na "Pridať Dac" pre pridanie prvého dac.
+          dac:
+            view_live_html: Zobraziť náhľad dac<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť dac
+            delete: Zmazať dac
+      dacs:
+        show:
+          other: Daľšie Dacs
+  activerecord:
+    attributes:
+      'refinery/dacs/dac':
+        name: Name
+        description: Description

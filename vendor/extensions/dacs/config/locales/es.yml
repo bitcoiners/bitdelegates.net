@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      dacs:
+        title: Dacs
+#        article: masculino/femenino
+    dacs:
+      admin:
+        dacs:
+          actions:
+            create_new: Crear nuevo dac
+            reorder: Reordenar dacs
+            reorder_done: Reordenación de dacs completada
+          records:
+            title: Dacs
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay dacs todavía. Pulsa en "Crear nuevo Dac" para crear tu primer dac.
+          dac:
+            view_live_html: Ver este dac como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este dac
+            delete: Borrar este dac para siempre
+      dacs:
+        show:
+          other: Otros dacs
+  activerecord:
+    attributes:
+      'refinery/dacs/dac':
+        name: Name
+        description: Description
